@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="libs.h" />
     <ClInclude Include="Primitives.h" />
+    <ClInclude Include="Texture.h" />
     <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
