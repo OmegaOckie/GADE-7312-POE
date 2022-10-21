@@ -6,7 +6,7 @@ Vertex vertices[] =
 	glm::vec3(-0.5f, 0.5f, 0.f),			glm::vec3(1.f, 0.f, 0.f),	glm::vec2(0.f, 1.f),
 	glm::vec3(-0.5f, -0.5f, 0.f),		glm::vec3(0.f, 1.f, 0.f),		glm::vec2(0.f, 0.f),
 	glm::vec3(0.5f, -0.5f, 0.f),		glm::vec3(0.f, 0.f, 1.f),		glm::vec2(1.f, 0.f),
-	glm::vec3(0.5f, 0.5f, 0.f),			glm::vec3(1.f, 1.f, 0.f),		glm::vec2(0.f, 0.f)
+	glm::vec3(0.5f, 0.5f, 0.f),			glm::vec3(1.f, 1.f, 0.f),		glm::vec2(1.f, 1.f)
 
 };
 unsigned nrOfVertices = sizeof(vertices) / sizeof(Vertex);
@@ -220,6 +220,32 @@ int main()
 	//BIND VAO 0
 	glBindVertexArray(0);
 
+	//TEXTURE INIT
+	//int image_width = 0;
+	//int image_height = 0;
+	//unsigned char* image = SOIL_load_image("Images/PolarBear.png", &image_width, &image_height, NULL, SOIL_LOAD_RGBA);
+
+	//GLuint texture0;
+	//glGenTextures(1, &texture0);
+	//glBindTexture(GL_TEXTURE_2D, texture0);
+
+	//glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	//glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	//glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	//glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+	//if (image)
+	//{
+	//	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
+	//	glGenerateMipmap(GL_TEXTURE_2D);
+	//}
+	//else
+	//{
+	//	std::cout << "ERROR::TEXTURE_LAODING_FAILED" << "\n";
+	//}
+	//glActiveTexture(0);
+	//glBindTexture(GL_TEXTURE_2D, 0);
+	//SOIL_free_image_data(image);
 	 
 	//MAIN  LOOP
 	while (!glfwWindowShouldClose(window))
@@ -236,6 +262,14 @@ int main()
 
 		//USE A PROGRAM
 		glUseProgram(core_program);
+
+		//Update uniforms
+
+
+		 
+		//Activate Texture
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_2D, texture0);
 
 		//Bind vertex array object
 		glBindVertexArray(VAO);
