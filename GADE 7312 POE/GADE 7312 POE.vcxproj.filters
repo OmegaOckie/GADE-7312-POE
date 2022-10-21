@@ -23,6 +23,12 @@
     <ClInclude Include="libs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Primitives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fragment_core.glsl">
