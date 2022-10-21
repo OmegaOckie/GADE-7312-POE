@@ -1,28 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GADE 7312 POE", "GADE 7312 POE.vcxproj", "{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
-		Release|Win32 = Release|Win32
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|Win32.ActiveCfg = Debug|Win32
-		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|Win32.Build.0 = Debug|Win32
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|x64.ActiveCfg = Debug|x64
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|x64.Build.0 = Debug|x64
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|x86.ActiveCfg = Debug|Win32
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Debug|x86.Build.0 = Debug|Win32
-		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Release|Win32.ActiveCfg = Release|Win32
-		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Release|Win32.Build.0 = Release|Win32
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Release|x64.ActiveCfg = Release|x64
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Release|x64.Build.0 = Release|x64
 		{5163D3C5-D267-4E3B-84BB-FB0A7CA09D42}.Release|x86.ActiveCfg = Release|Win32
