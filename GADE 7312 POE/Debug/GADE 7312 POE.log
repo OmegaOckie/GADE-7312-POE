@@ -1,2 +1,7 @@
 ﻿  Main.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+soil2.lib(SOIL2.obj) : warning LNK4099: PDB 'soil2.pdb' was not found with 'soil2.lib(SOIL2.obj)' or at 'D:\VEGA\3rd Year\Sem 2\GADE7312\2022\POE\GADE-7312-POE\GADE 7312 POE\Debug\soil2.pdb'; linking object as if no debug info
+soil2.lib(image_DXT.obj) : warning LNK4099: PDB 'soil2.pdb' was not found with 'soil2.lib(image_DXT.obj)' or at 'D:\VEGA\3rd Year\Sem 2\GADE7312\2022\POE\GADE-7312-POE\GADE 7312 POE\Debug\soil2.pdb'; linking object as if no debug info
+soil2.lib(image_helper.obj) : warning LNK4099: PDB 'soil2.pdb' was not found with 'soil2.lib(image_helper.obj)' or at 'D:\VEGA\3rd Year\Sem 2\GADE7312\2022\POE\GADE-7312-POE\GADE 7312 POE\Debug\soil2.pdb'; linking object as if no debug info
+soil2.lib(wfETC.obj) : warning LNK4099: PDB 'soil2.pdb' was not found with 'soil2.lib(wfETC.obj)' or at 'D:\VEGA\3rd Year\Sem 2\GADE7312\2022\POE\GADE-7312-POE\GADE 7312 POE\Debug\soil2.pdb'; linking object as if no debug info
   GADE 7312 POE.vcxproj -> D:\VEGA\3rd Year\Sem 2\GADE7312\2022\POE\GADE-7312-POE\GADE 7312 POE\Debug\GADE 7312 POE.exe
