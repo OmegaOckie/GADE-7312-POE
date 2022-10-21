@@ -108,7 +108,7 @@ public:
 
 	//Constructors/Destructors
 	Shader(const int versionMajor, const int versionMinor,
-		char* vertexFile, char* fragmentFile, char* geometryFile = "")
+		char* vertexFile, char* fragmentFile, char* geometryFile /*= ""*/)
 		: versionMajor(versionMajor), versionMinor(versionMinor)
 	{
 		GLuint vertexShader = 0;
