@@ -147,7 +147,14 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\OpenGL-C---Tutorials-master\Mesh.h" />
     <ClInclude Include="libs.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="OBJLoader.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fragment_core.glsl" />
