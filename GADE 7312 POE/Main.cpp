@@ -180,6 +180,7 @@ int main()
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL /*"GL_LINE" to make everything lines*/);
 
 	//Shader INIT
+	Shader test("vertex_core.glsl", "fragment_core.glsl");
 	GLuint core_program;
 	if (!loadShaders(core_program))
 		glfwTerminate();
