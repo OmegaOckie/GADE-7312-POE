@@ -3,15 +3,18 @@
 Vertex vertices[] =
 {
 	//Position							//Color							//Texcoords
-	glm::vec3(0.0f, 0.5f, 0.f),			glm::vec3(1.f, 0.f, 0.f),		glm::vec2(0.f, 1.f),
+	glm::vec3(-0.5f, 0.5f, 0.f),			glm::vec3(1.f, 0.f, 0.f),	glm::vec2(0.f, 1.f),
 	glm::vec3(-0.5f, -0.5f, 0.f),		glm::vec3(0.f, 1.f, 0.f),		glm::vec2(0.f, 0.f),
-	glm::vec3(0.5f, -0.5f, 0.f),		glm::vec3(0.f, 0.f, 1.f),		glm::vec2(1.f, 0.f)
+	glm::vec3(0.5f, -0.5f, 0.f),		glm::vec3(0.f, 0.f, 1.f),		glm::vec2(1.f, 0.f),
+	glm::vec3(0.5f, 0.5f, 0.f),			glm::vec3(1.f, 1.f, 0.f),		glm::vec2(0.f, 0.f)
+
 };
 unsigned nrOfVertices = sizeof(vertices) / sizeof(Vertex);
 
 GLuint indices[] =
 {
-	0,1,2
+	0,1,2, //Triangle 1
+	0,2,3 //Triangle 2
 };
 unsigned nrOfIndices = sizeof(indices) / sizeof(GLuint);
 
@@ -174,7 +177,7 @@ int main()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL /*"GL_LINE" to make everything lines*/);
 
 	//Shader INIT
 	GLuint core_program;
@@ -227,8 +230,6 @@ int main()
 		//UPDATE
 		updateInput(window);
 
-		//DRAW
-
 		//CLEAR
 		glClearColor(0.f, 0.f, 0.f, 1.f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
@@ -240,6 +241,7 @@ int main()
 		glBindVertexArray(VAO);
 		
 		//DRAW
+		//glDrawArrays(GL_TRIANGLES, 0, nrOfVertices);
 		glDrawElements(GL_TRIANGLES, nrOfIndices, GL_UNSIGNED_INT, 0);
 
 		//END DRAW
