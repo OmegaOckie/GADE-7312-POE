@@ -18,8 +18,6 @@
 
 #include<SOIL2.h>
 
-#include"Shader.h"
-
 struct Vertex
 {
 	glm::vec3 position;
